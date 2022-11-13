@@ -1,0 +1,52 @@
+.center {
+	margin-top: 10px;
+  display: block;
+  margin-left: 10px;
+  margin-right: auto;
+  width: 10%;
+}
+.title{
+	padding:1px 1px 1px 175px; 
+	font-family: Helvetica ;
+	font-size: 30px ;
+	font-weight: bold;
+}
+
+.blurb{
+	padding:  1px 175px 1px 175px ;
+
+}
+
+.row {
+	  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+a.button1{
+	display:inline-block;
+	padding:0.35em 1.2em;
+	border:0.1em solid #382e2c;
+	margin:0 0.3em 0.3em 0;
+	border-radius:0.12em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:Helvetica;
+	font-weight:500;
+	color:#382e2c;
+	text-align:center;
+	transition: all 0.2s;
+}
+a.button1:hover{
+	color:#FFFFFF;
+	background-color:#382e2c;
+	border:0.1em solid #FFFFFF
+}
+@media all and (max-width:30em){
+a.button1{
+	display:block;
+	margin:0.4em auto;
+}
+}
+
+
+

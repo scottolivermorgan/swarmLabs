@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head_css %}
+{% load static %}
+<link rel ="stylesheet" href="{% static "placeHolder/css/f.css" %}" type="text/css">
+{% endblock head_css %}
+
+{% block body %}
+<body>
+
+		<div>
+		
+			<img src="{% static "placeHolder/images/logo.png"  %}"
+			alt = "logo">
+		</div>
+		<div>
+			
+			<video loop muted autoplay poster="{% static "placeHolder/gifs/u.png"  %}" class="fullscreen_bg__video">
+			<source src="{% static "placeHolder/gifs/wExp.mp4"  %}">
+			type="video/mp4"
+			</video>
+			</div>
+	</body>
+
+{% endblock %}

@@ -1,0 +1,118 @@
+{# HTML5 declaration #}
+<!DOCTYPE html>
+<html>
+	{# Make modifiable head elements #}
+	<head>
+		{% load static %}
+		
+		{# load bootstrap #}
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+		crossorigin="anonymous">
+		
+		{# load bootstrap js lib #}
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+		crossorigin="anonymous"></script>
+		
+		<title>{% block title %}swarmIndustries{% endblock title %}</title>
+		
+		{% block head_favicon %}
+			<link rel="shortcut icon" type="image/png" href="{% static 'placeHolder/logo1clickable.ico' %}"/>
+		{% endblock head_favicon %}
+		
+		{% block head_css %}{% endblock head_css %}
+			
+	</head>
+	<body>
+		{% block navBar %}
+			<nav class="navbar navbar-expand-md">
+			<a class="navbar-brand" href="#">Logo</a>
+			<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="main-navigation">
+			<ul class="navbar-nav">
+			<li class="nav-item">
+			<a class="nav-link" href={% url 'landing' %}>Home</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href={% url 'aboutUs' %}>About</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href={% url 'contact' %}>Contact</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href={% url 'register' %}>Register</a>
+			</li>
+			</ul>
+			</div>
+			</nav>
+		{% endblock navBar %}
+		
+		{% block body %}
+		
+	{% endblock %}
+		
+	{% block footer %}
+	<link rel="stylesheet" 
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+	<!-- Footer -->
+		<footer class="page-footer font-small ">
+		
+		<!-- Footer Elements -->
+		<div class="container">
+
+		<!-- Grid row-->
+			<div class="row">
+
+			<!-- Grid column -->
+				<div class="col-md-12 py-5">
+					<div class="mb-5">
+
+					<!-- Facebook -->
+					<center>
+						<a class="fb-ic">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+						<!-- Twitter -->
+						<a class="tw-ic">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+						</a>
+						<!--Linkedin -->
+						<a class="li-ic">
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+						</a>
+						<!--Instagram-->
+						<a class="ins-ic">
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+						</a>
+          </center>
+					</div>
+				</div>
+			<!-- Grid column -->
+			</div>
+		<!-- Grid row-->
+		</div>
+		<!-- Footer Elements -->
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3">© 2020 Copyright:
+			<a href="https://mdbootstrap.com/"> swarmIndustries.com</a>
+		</div>
+		<!-- Copyright -->
+
+	</footer>
+	<!-- Footer -->
+	{% endblock footer %}
+		
+	</body>
+</html>
+
+
+
+
+
+
+
+
+

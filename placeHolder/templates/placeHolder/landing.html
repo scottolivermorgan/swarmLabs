@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block head_css %}
+{% load static %}
+<link rel ="stylesheet" href="{% static "placeHolder/css/f.css" %}" type="text/css">
+{% endblock head_css %}
+
+<title>{% block title %}Swarm Labs{% endblock title %}</title>
+
+{% block body %}
+<body>
+		<div>
+		</div>
+		<div>
+		
+			<img src="{% static "placeHolder/images/tempLogoTrans.jpg"  %}"
+			alt = "logo" class="center">
+		</div>
+		<br>
+		<div  class="row" align="center">
+		
+			<a href={% url 'aboutUs' %} class="button1">About</a>
+			<a href={% url 'patents' %} class="button1">Patents</a>
+			<a href={% url 'contact' %} class="button1">Contact</a>
+			<a href={% url 'shop' %} class="button1">Shop</a>
+
+		
+
+			
+
+			</div>
+		<br>
+		<br>
+	</body>
+
+{% endblock %}

@@ -1,0 +1,104 @@
+{# HTML5 declaration #}
+<!DOCTYPE html>
+<html>
+	{# Make modifiable head elements #}
+	<head>
+		{% load static %}
+		
+		{# load bootstrap #}
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+		crossorigin="anonymous">
+		
+		{# load bootstrap js lib #}
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+		crossorigin="anonymous"></script>
+		
+		<title>{% block title %}swarmIndustries{% endblock title %}</title>
+		
+		{% block head_favicon %}
+			<link rel="shortcut icon" type="image/png" href="{% static 'placeHolder/logo1clickable.ico' %}"/>
+		{% endblock head_favicon %}
+		
+		{% block head_css %}{% endblock head_css %}
+			
+	</head>
+	<body>
+		
+		{% block body %}	
+		{% endblock %}
+		
+	{% block footer %}
+	
+	<link rel="stylesheet" 
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+	
+	<!-- Footer -->
+		
+		<footer class="page-footer font-small " align="center">
+
+		<!-- Footer Elements -->
+		<div class="container">
+		
+
+		<!-- Grid row-->
+		<center>
+			<div class="row" align="center">
+				<center>
+						<a href="https://www.facebook.com/Swarm-Labs-102522568202848" target="_blank">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+						<!-- Twitter -->
+						<a href="https://twitter.com/SwarmLtd" target="_blank">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+						</a>
+						<!--Linkedin -->
+						<a href="https://www.linkedin.com/in/chris-lowe-1a63881b2/" target="_blank">
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+						</a>
+						<!--Instagram-->
+						<a href="https://www.instagram.com/swarmlabs" target="_blank">
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+						</a>
+						<a href="https://www.youtube.com/channel/UC4xdb2kD3QfE5TkDHT8x71w/featured" target="_blank">
+						<i class="fa fa-youtube" aria-hidden="true"></i>
+						</a>
+          
+			<!-- Grid column -->
+				
+				
+				
+				
+				<br><sub>© 2020 Copyright</sub>
+			<sub > Swarm Labs</sub>
+				</center>
+			<!-- Grid column -->
+			</div>
+		<!-- Grid row-->
+		</div>
+		
+		<!-- Footer Elements -->
+		<!-- Copyright -->
+		 
+
+		<!-- Copyright -->
+
+	</footer>
+
+	<!-- Footer -->
+	{% endblock footer %}
+		
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
